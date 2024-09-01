@@ -5,15 +5,19 @@ public class Lesson_5 {
         byte firstByte = 2;
         short firstShort = 3;
         long firstLong = 4L;
+        float firstFloat = 5;
+        char firstChar = 'A';
+        boolean firstBoolean = true;
 
         System.out.println();
-        System.out.println("int:" +firstInt);
-        System.out.println(firstByte);
-        System.out.println(firstShort);
-        System.out.println(firstLong);
+        System.out.println("int: " + firstInt);
+        System.out.println("byte: " + firstByte);
+        System.out.println("short: " + firstShort);
+        System.out.println("long: " + firstLong);
+        System.out.println("float: " + firstFloat);
+        System.out.println("char: " + firstChar);
+        System.out.println("boolean: " + firstBoolean);
         System.out.println();
 
-        char firstChar = 'a';
-        System.out.println(firstChar);
     }
 }
