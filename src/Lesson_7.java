@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Lesson_7 {
 
     public static void main(String[] args) {
@@ -24,5 +27,12 @@ public class Lesson_7 {
 
         System.out.println("Сложение: " + (firstByte + firstShort));
         System.out.println("Умножение: " + (firstInt * firstLong));
+
+        Scanner newScanner = new Scanner(System.in);
+
+        Random newRandom = new Random();
+        char secondChar = (char) newRandom.nextInt(1, 4);
+        System.out.println();
+        System.out.println(secondChar);
     }
 }
