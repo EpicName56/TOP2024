@@ -24,5 +24,20 @@ public class Lesson_5 {
 
         System.out.println("Сложение: " + (firstByte + firstShort));
         System.out.println("Умножение: " + (firstInt * firstLong));
+        System.out.println();
+
+        // первая попытка вызвать переполнение //
+
+        long firstOverflow = Integer.MAX_VALUE;
+        long secondOverflow = Integer.MAX_VALUE;
+        long finalOverflow = (int) (firstOverflow * secondOverflow);
+        System.out.println(finalOverflow);
+
+        System.out.println();
+
+        // вторая попытка //
+
+        long testOverflow = Integer.MAX_VALUE + 1;
+        System.out.println(testOverflow);
     }
 }
