@@ -26,6 +26,7 @@ public class Lesson_8 {
 
         System.out.println("Сложение: " + (firstByte + firstShort));
         System.out.println("Умножение: " + (firstInt * firstLong));
+        System.out.println();
 
         // скорее всего, это все можно уместить в одну или две строки и даже не обязательно писать четыре рандома //
         // но я не ищу легких путей, я по ним иду //
@@ -48,17 +49,7 @@ public class Lesson_8 {
         System.out.print(thirdRandomChar);
         System.out.print(fourRandomChar);
 
-        System.out.println();
-
         // я не понимамю, как я это делаю, но это, вроде, работает :D //
 
-        char secondCharTransform = (char) (firstChar + 1);
-        char thirdCharTransform = (char) (firstChar + 2);
-        char fourCharTransform = (char) (firstChar + 3);
-
-        System.out.print(firstChar);
-        System.out.print(secondCharTransform);
-        System.out.print(thirdCharTransform);
-        System.out.print(fourCharTransform);
     }
 }
