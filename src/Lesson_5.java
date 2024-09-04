@@ -24,5 +24,6 @@ public class Lesson_5 {
 
         System.out.println("Сложение: " + (firstByte + firstShort));
         System.out.println("Умножение: " + (firstInt * firstLong));
+        System.out.println();
     }
 }
