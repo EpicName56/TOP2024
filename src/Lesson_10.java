@@ -10,7 +10,8 @@ public class Lesson_10 {
 
         Scanner firstScan = new Scanner(System.in);
 
-        System.out.print("Собираемся на тренировку. На улице сейчас тепло или холодно?: ");
+        System.out.println("Собираемся на тренировку. На улице сейчас тепло или холодно?");
+        System.out.print("Введите 'Тепло' или 'Холодно': ");
         String coldOrWarm = firstScan.nextLine();
 
         if (Objects.equals(coldOrWarm, warm)) {
@@ -25,8 +26,9 @@ public class Lesson_10 {
         String prepare = "Подготовиться";
         String immediately = "Без подготовки";
 
-        System.out.print("Вы пришли в тренажерный зал. Вы хотите побегать на беговой дорожке или сразу приступить" +
-                " к силовым тренировкам?: ");
+        System.out.println("Вы пришли в тренажерный зал. Вы хотите побегать на беговой дорожке или сразу приступить" +
+                " к силовым тренировкам?");
+        System.out.print("Введите 'Подготовиться' или 'Без подготовки': ");
 
         String prepareOrImmediately = firstScan.nextLine();
 
