@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class newSwitchTraining {
+public class Lesson_11_2 {
 
     public static void main(String[] args) {
 
