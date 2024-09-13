@@ -17,17 +17,17 @@ public class Lesson_12_2 {
 
         System.out.println("Диана теперь получает " + finalSalaryDiana +
                 " рублей в месяц. Годовой доход Дианы вырос на " + newSalaryDiana * 12 +
-                " рублей. Теперь годовой доход Дианы составляет: " + (salaryDiana + newSalaryDiana) * 12 +
+                " рублей. Теперь годовой доход Дианы составляет: " + finalSalaryDiana * 12 +
                 " рублей в год");
 
         System.out.println("Андрей теперь получает " + finalSalaryAndrey +
                 " рублей в месяц. Годовой доход Андрея вырос" +
                 " на " + newSalaryAndrey * 12 + " рублей. Теперь годовой доход Андрея составляет: " +
-                (salaryAndrey + newSalaryAndrey) * 12 + " рублей в год");
+                finalSalaryAndrey * 12 + " рублей в год");
 
         System.out.println("Мария теперь получает " + finalSalaryMaria +
                 " рублей в месяц. Годовой доход Марии вырос на " +
                 newSalaryMaria * 12 + " рублей. Теперь годовой доход Марии составляет: "
-                + (salaryMaria + newSalaryMaria) * 12 + " рублей в год");
+                + finalSalaryMaria * 12 + " рублей в год");
     }
 }
