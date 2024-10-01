@@ -18,5 +18,6 @@ public class Homework_21_22 {
         System.out.println();
         System.out.println("Минимальное и максимальное число в массиве: " + cornerValuesArray());
 
+
     }
 }
