@@ -31,15 +31,16 @@ public class Methods {
 
     /**
      * Метод находит и выводит наименьшее и наибольшее число, указанное пользователем в заданном массиве
+     *
      * @param value - массив (значение) цифр через который выполняется поиск
      * @return возвращаемое меньшее и большее число из массива
      */
 
-    static String cornerValuesArray(int... value) {
+    static int[] cornerValuesArray(int... value) {
 
         if (value.length == 0) {
             System.out.print("Массив пустой: ");
-            return null;
+            return value;
         }
 
         int min = value[0];
@@ -49,9 +50,8 @@ public class Methods {
             if (value[i] > max) max = value[i];
             else if (value[i] < min) min = value[i];
         }
-        String result = min + " " + max;
 
-        return result;
+        return new int[]{min, max};
 
     }
 
@@ -114,6 +114,7 @@ public class Methods {
      * @param l - хранит в себе заданное число
      * @return возвращает факторил из заданного числа
      */
+
     static long factorialRecursion(long l) {
 
         long factorial = 1;
