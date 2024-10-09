@@ -31,7 +31,6 @@ public class Methods {
 
     /**
      * Метод находит и выводит наименьшее и наибольшее число, указанное пользователем в заданном массиве
-     *
      * @param value - массив (значение) цифр через который выполняется поиск
      * @return возвращаемое меньшее и большее число из массива
      */
@@ -111,18 +110,14 @@ public class Methods {
 
     /**
      * Метод выводит факториал из заданного заранее пользователем числа
-     * @param l - хранит в себе заданное число
      * @return возвращает факторил из заданного числа
      */
 
     static long factorialRecursion(long l) {
 
-        long factorial = 1;
+        if (l < 2) return 1;
 
-        for (int i = 1; i <= l; i++) {
-            factorial *= i;
-        }
-        return factorial;
+        return l * factorialRecursion(l - 1);
+
     }
-
 }
