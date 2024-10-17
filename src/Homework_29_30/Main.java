@@ -4,29 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Book book1 = new Book();
-        Book book2 = new Book();
-        Author author1 = new Author();
-        Author author2 = new Author();
+        Book book1 = new Book("Война и Мир", "Лев Николаевич Толстой", 1863);
+        Book book2 = new Book("Мертвые души", "Николай Васильевич Гоголь", 1835);
+        Author author1 = new Author("Лев Николаевич Толстой");
+        Author author2 = new Author("Николай Васильевич Гоголь");
 
+        System.out.println(book1);
+        System.out.println(book2);
 
-        author1.setAuthor("Лев Николаевич Толстой");
-        author2.setAuthor("Николай Васильевич Гоголь");
+        book1.setBookName(book2.getBookName());
+        book1.setYear(book2.getYear());
+        book2.setAuthor(author1.getAuthor());
 
-
-        book1.setBook("Война и мир");
-        book2.setBook("Мертвые души");
-        book1.setAuthor(author1);
-        book2.setAuthor(author2);
-
-
-        book1.setYear(1863);
-        book2.setYear(1835);
-
-
-        book1.showInformation();
         System.out.println();
-        book2.showInformation();
+
+        System.out.println(book1);
+        System.out.println(book2);
 
     }
 }

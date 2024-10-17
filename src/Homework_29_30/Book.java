@@ -2,15 +2,33 @@ package Homework_29_30;
 
 public class Book {
 
-    private String book;
-    private Author author;
+    private String bookName;
+    private String author;
     private Integer year;
 
-    public void setBook(String book) {
-        this.book = book;
+    public Book(String book, String author, Integer year) {
+        this.bookName = book;
+        this.author = author;
+        this.year = year;
     }
 
-    public void setAuthor(Author author) {
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+
+    /**
+     * Метод выводит в консоль информацию о книге, авторе и дате написания
+     *
+     * @return выводит в консоль всю информацию по книге, авторе и дате написания
+     */
+
+    @Override
+    public String toString() {
+        return "Книга" + " " + bookName + " была написана автором " + getAuthor() + " в " + year + " году";
+    }
+
+    public void setAuthor(String author) {
         this.author = author;
     }
 
@@ -18,24 +36,15 @@ public class Book {
         this.year = year;
     }
 
-    public String getBook() {
-        return book;
+    public String getBookName() {
+        return bookName;
     }
 
-    public Author getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
     public Integer getYear() {
         return year;
-    }
-
-
-    /**
-     * Метод выводит и отображает информацию о книге, авторе и дате написания
-     */
-    public void showInformation() {
-
-        System.out.println("Книга " + book + " была написана автором " + author.getAuthor() + " в " + year + " году");
     }
 }
