@@ -36,13 +36,13 @@ public class Main {
         // Создать список или массив объектов типа Animal, включающий в себя
         // собак, кошек и птиц
 
-        Animal[] arr = new Animal[3];
-        arr[0] = new Dog();
-        arr[1] = new Cat();
-        arr[2] = new Bird();
+        Animal[] animalArr = new Animal[3];
+        animalArr[0] = new Dog();
+        animalArr[1] = new Cat();
+        animalArr[2] = new Bird();
 
-        for (Animal a : arr) {
-            System.out.println(a.getName() + " издает звуки: " + a.makeSound());
+        for (Animal animal : animalArr) {
+            System.out.println(animal.getName() + " издает звуки: " + animal.makeSound());
         }
     }
 }
