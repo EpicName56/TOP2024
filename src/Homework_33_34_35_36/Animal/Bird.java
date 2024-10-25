@@ -3,7 +3,7 @@ package Homework_33_34_35_36.Animal;
 public class Bird extends Animal {
 
     public Bird(String name) {
-        super(" ");
+        super(name);
     }
 
     public void move() {

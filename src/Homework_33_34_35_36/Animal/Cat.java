@@ -4,7 +4,7 @@ public class Cat extends Animal
         implements Pet {
 
     public Cat(String name) {
-        super(" ");
+        super(name);
     }
 
     @Override

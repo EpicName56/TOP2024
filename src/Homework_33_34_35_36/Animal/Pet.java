@@ -3,10 +3,10 @@ package Homework_33_34_35_36.Animal;
 public interface Pet {
 
     default String play() {
-        return " ";
+        return play();
     }
 
     default String beFriendly() {
-        return " ";
+        return beFriendly();
     }
 }
