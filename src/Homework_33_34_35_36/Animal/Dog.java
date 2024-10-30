@@ -1,6 +1,6 @@
 package Homework_33_34_35_36.Animal;
 
-public class Dog extends Animal
+public final class Dog extends Animal
         implements Pet {
 
     public Dog(String name) {
