@@ -1,3 +1,5 @@
+package Old_Homework;
+
 import java.util.Random;
 
 public class Lesson_8 {
