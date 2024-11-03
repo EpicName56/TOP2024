@@ -1,3 +1,5 @@
+package Old_Homework;
+
 import java.util.Scanner;
 
 public class Lesson_11 {

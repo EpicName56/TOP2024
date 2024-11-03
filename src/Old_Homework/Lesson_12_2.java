@@ -1,3 +1,5 @@
+package Old_Homework;
+
 public class Lesson_12_2 {
 
     public static void main(String[] args) {
