@@ -1,4 +1,6 @@
-package Homework_39_40;
+package Homework_39_40_45_46;
+
+import java.util.Objects;
 
 public class House {
 
@@ -17,6 +19,19 @@ public class House {
         this.floors = houseBuilder.floors;
         this.rooms = houseBuilder.rooms;
         this.garage = houseBuilder.garage;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        House house = (House) o;
+        return floors == house.floors && rooms == house.rooms && garage == house.garage;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(floors, rooms, garage);
     }
 
 
