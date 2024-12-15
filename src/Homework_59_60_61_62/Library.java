@@ -1,6 +1,7 @@
-package Homework_59_60;
+package Homework_59_60_61_62;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Library {
 
@@ -35,11 +36,11 @@ public class Library {
      * @param book принимает данные о книге
      * @return если книга доступна в библиотеке, то возвращает саму книгу
      */
-    public Object getBook(Book book) {
+    public List getBook(Book book) {
         if (book.isAvailable()) {
-            return book + " находится в библиотеке";
+            return Collections.singletonList(book + " находится в библиотеке");
         } else {
-            return "Книга не найдена";
+            return Collections.singletonList("Книга не найдена");
         }
     }
 
@@ -96,6 +97,14 @@ public class Library {
         List<String> Authors = new ArrayList<>();
         books.values().forEach(book -> Authors.add(book.getAuthor()));
         return Authors.stream().sorted(Comparator.naturalOrder()).distinct().toList();
+    }
+
+    public Map<Boolean, List<Book>> testMap() {
+        return books.values().stream().collect(Collectors.partitioningBy(Book::isAvailable));
+    }
+
+    public Map<String, List<Book>> testAuthorMap() {
+        return books.values().stream().collect(Collectors.groupingBy(Book::getAuthor));
     }
 
     @Override

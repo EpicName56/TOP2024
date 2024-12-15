@@ -1,4 +1,4 @@
-package Homework_59_60;
+package Homework_59_60_61_62;
 
 import java.util.List;
 
@@ -30,5 +30,7 @@ public class Main {
         System.out.println(library.getAuthors());
         System.out.println(library.bookCount());
         System.out.println(library.getBook(book4));
+        System.out.println(library.testAuthorMap());
+        System.out.println(library.testMap());
     }
 }
